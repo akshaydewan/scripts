@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "git pull --rebase git://`ipconfig getifaddr en0`/`basename $PWD` `git symbolic-ref --short HEAD`"
+git daemon --base-path=.. --informative-errors --verbose --export-all
+
